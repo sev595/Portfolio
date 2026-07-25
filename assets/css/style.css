@@ -1880,3 +1880,67 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+
+/**
+ * #PORTFOLIO LOGO CARD
+ */
+
+.project-img-contain {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #2b2020;
+}
+
+.project-img-contain img {
+  object-fit: contain;
+  padding: 30px;
+}
+
+
+
+
+/**
+ * #PORTFOLIO PLACEHOLDER CARD
+ */
+
+.project-img-placeholder {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: var(--border-gradient-onyx);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-img-placeholder::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+}
+
+.project-img-logo {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+}
+
+.project-img-logo svg {
+  width: 100%;
+  max-width: 130px;
+  height: auto;
+}
+
+.project-img-logo-text {
+  color: var(--light-gray-70);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  letter-spacing: 0.5px;
+}
